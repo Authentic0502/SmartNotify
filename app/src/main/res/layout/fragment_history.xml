@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Écran historique des notifications -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F0FAFA">
+
+    <!-- Bouton effacer l'historique -->
+    <Button
+        android:id="@+id/buttonClearHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_margin="8dp"
+        android:text="Effacer tout"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+
+    <!-- Liste de l'historique -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewHistory"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:clipToPadding="false"/>
+
+    <!-- Message si historique vide -->
+    <TextView
+        android:id="@+id/textEmptyHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Aucune notification envoyée"
+        android:textColor="#9E9E9E"
+        android:textSize="16sp"
+        android:visibility="gone"/>
+
+</LinearLayout>

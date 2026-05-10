@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <!-- Écran principal (Dashboard) -->
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.saleh.smartnotify.ui.home.HomeFragment"
+        android:label="Accueil">
+
+        <!-- Navigation vers la création d'une tâche -->
+        <action
+            android:id="@+id/action_home_to_addTask"
+            app:destination="@id/addTaskFragment"/>
+
+        <!-- Navigation vers l'historique -->
+        <action
+            android:id="@+id/action_home_to_history"
+            app:destination="@id/historyFragment"/>
+
+        <!-- Navigation vers les paramètres -->
+        <action
+            android:id="@+id/action_home_to_settings"
+            app:destination="@id/settingsFragment"/>
+        <!-- Navigation vers apropos -->
+        <action
+            android:id="@+id/action_home_to_about"
+            app:destination="@id/aboutFragment"/>
+    </fragment>
+
+    <!-- Écran de création/modification de tâche -->
+    <fragment
+        android:id="@+id/addTaskFragment"
+        android:name="com.saleh.smartnotify.ui.task.AddTaskFragment"
+        android:label="Nouvelle tâche">
+
+        <!-- Argument pour modifier une tâche existante -->
+        <argument
+            android:name="taskId"
+            app:argType="integer"
+            android:defaultValue="-1"/>
+    </fragment>
+
+    <!-- Écran historique des notifications -->
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.saleh.smartnotify.ui.history.HistoryFragment"
+        android:label="Historique"/>
+
+    <!-- Écran paramètres -->
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.saleh.smartnotify.ui.settings.SettingsFragment"
+        android:label="Paramètres">
+        <action
+            android:id="@+id/action_settings_to_about"
+            app:destination="@id/aboutFragment"/>
+    </fragment>
+
+    <!-- Écran À propos -->
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.saleh.smartnotify.ui.about.AboutFragment"
+        android:label="À propos"/>
+
+</navigation>

@@ -1,0 +1,23 @@
+<resources>
+    <style name="Base.Theme.SmartNotify"
+        parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">#4DD9C0</item>
+        <item name="colorPrimaryVariant">#2BA898</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSecondary">#5BC878</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <item name="android:colorBackground">#F0FAFA</item>
+        <item name="colorSurface">#FFFFFF</item>
+        <item name="colorOnSurface">#1A3C3A</item>
+        <item name="android:textColorPrimary">#1A3C3A</item>
+        <item name="android:textColorSecondary">#5A8A85</item>
+
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:statusBarColor">#2BA898</item>
+        <item name="android:navigationBarColor">#2BA898</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="Theme.SmartNotify" parent="Base.Theme.SmartNotify"/>
+</resources>
