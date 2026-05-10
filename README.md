@@ -82,7 +82,21 @@ MVVM (Model - View - ViewModel)
 
 ## 📱 Captures d'écran
 
-> *Captures d'écran à ajouter*
+> <div align="center">
+
+| Accueil | Menu Drawer | Créer une tâche |
+|:---:|:---:|:---:|
+| ![Accueil](screenshots/home.jpg) | ![Drawer](screenshots/drawer.jpg) | ![Créer](screenshots/add_task.jpg) |
+
+| Carte Geofencing | Historique | Paramètres |
+|:---:|:---:|:---:|
+| ![Carte](screenshots/map.jpg) | ![Historique](screenshots/history.jpg) | ![Paramètres](screenshots/settings.jpg) |
+
+| À propos |
+|:---:|
+| ![Apropos](screenshots/about.jpg) |
+
+</div>
 
 ---
 
